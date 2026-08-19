@@ -203,7 +203,8 @@ async function main() {
       ok: health.ok && health.data?.ok === true,
       d1Configured: health.data?.d1Configured === true,
       analyticsConfigured: health.data?.analyticsConfigured === true,
-      pricingEnabled: health.data?.pricingEnabled === false,
+      pricingEnabled: health.data?.pricingEnabled === true,
+      pricingDisabled: health.data?.pricingEnabled === false,
       deploymentRegion: health.data?.deploymentRegion || ""
     },
     risk: {
@@ -251,6 +252,7 @@ async function main() {
     report.health.d1Configured &&
     report.health.analyticsConfigured &&
     report.health.pricingEnabled === false &&
+    report.health.pricingDisabled === true &&
     report.risk.ok &&
     report.analytics.ok &&
     report.analytics.stored &&

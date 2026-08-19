@@ -3,7 +3,7 @@
   "domain": "warriskindex.blog",
   "url": "https://warriskindex.blog/",
   "type": "Public data tool",
-  "status": "production_pending",
+  "status": "production_complete",
   "routes": [
     "/",
     "/methodology",
@@ -26,6 +26,10 @@
     "d1_gate": "pass"
   },
   "deploymentRegion": "us",
+  "githubRepos": [
+    "https://github.com/clauxel/warriskindex-blog-site",
+    "https://github.com/clauxel/warriskindex-blog-docs"
+  ],
   "trustDataLedger": [
     {
       "source": "https://www.gdeltproject.org/",
@@ -130,6 +134,16 @@
       "id": "free_public_tool_scope",
       "status": "pass",
       "evidence": "Pricing and checkout are intentionally disabled; no payment or paid gate is part of the requested website."
+    },
+    {
+      "id": "cloudflare_production_deployment",
+      "status": "pass",
+      "evidence": "Cloudflare zone, DNS, HTTPS certificate, Worker routes, D1 binding, and production probes passed for warriskindex.blog."
+    },
+    {
+      "id": "public_github_repositories",
+      "status": "pass",
+      "evidence": "Public site and docs repositories were created and pushed on GitHub."
     }
   ],
   "no_early_final_until_all_mandatory_gates_pass": true

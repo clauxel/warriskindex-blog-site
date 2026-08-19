@@ -578,17 +578,18 @@ async function fetchAsset(request, env, pathname) {
 async function serveStatic(request, env) {
   const url = new URL(request.url);
   let pathname = url.pathname;
+  let htmlPath = false;
   if (!hasFileExtension(pathname)) {
     if (!pathname.endsWith("/")) {
       return Response.redirect(`${url.origin}${pathname}/${url.search}`, 301);
     }
-    pathname = `${pathname}index.html`;
+    htmlPath = true;
   }
   const response = await fetchAsset(request, env, pathname);
   if (response.status !== 404) {
     const headers = new Headers(response.headers);
     headers.set("X-Content-Type-Options", "nosniff");
-    if (pathname.endsWith(".html")) headers.set("Cache-Control", "public, max-age=120");
+    if (htmlPath || pathname.endsWith(".html")) headers.set("Cache-Control", "public, max-age=120");
     return new Response(response.body, { status: response.status, headers });
   }
   return fetchAsset(request, env, "/404.html");
