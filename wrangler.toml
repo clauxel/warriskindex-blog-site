@@ -1,0 +1,18 @@
+name = "warriskindex-blog-site"
+main = "worker/index.js"
+compatibility_date = "2026-08-19"
+workers_dev = true
+preview_urls = true
+routes = [
+  { pattern = "warriskindex.blog/*", zone_name = "warriskindex.blog" },
+  { pattern = "www.warriskindex.blog/*", zone_name = "warriskindex.blog" }
+]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "warriskindex-blog-db"
+database_id = "edb8dce0-2095-4743-be89-4eee4916528a"

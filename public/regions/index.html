@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>War Risk Index Regions</title>
+  <meta name="description" content="Regional War Risk Index board for global conflict pressure, Ukraine, Middle East, Taiwan Strait, Red Sea, and more.">
+  <link rel="canonical" href="https://warriskindex.blog/regions/">
+  <meta property="og:title" content="War Risk Index Regions">
+  <meta property="og:description" content="Regional open-news war risk signals with transparent source boundaries.">
+  <meta property="og:url" content="https://warriskindex.blog/regions/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://warriskindex.blog/assets/war-risk-signal-board.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260819">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span><span>War Risk Index</span></a>
+        <nav class="navlinks" aria-label="Primary">
+          <a href="/methodology/">Methodology</a>
+          <a href="/regions/">Regions</a>
+          <a href="/sources/">Sources</a>
+          <a href="/llms.txt">llms.txt</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="main">
+      <section class="wrap legal-panel">
+        <p class="kicker">Region board</p>
+        <h1>War Risk Index regions</h1>
+        <p class="lead">Regional scores are open-news pressure readings. The same formula is applied to each region so the board stays comparable across queries.</p>
+      </section>
+
+      <section class="section">
+        <div class="wrap signal-panel">
+          <div class="signal-header">
+            <div>
+              <span class="label">Active region</span>
+              <h2><span id="active-region">Global composite</span></h2>
+            </div>
+            <div class="stamp">
+              <div id="api-state">Live source pending</div>
+              <div id="updated-at">Waiting for data</div>
+            </div>
+          </div>
+          <div class="score-row">
+            <div class="score-box">
+              <div class="score"><span id="active-score">--</span><small>/100</small></div>
+              <div id="active-level" class="level">Pending</div>
+            </div>
+            <div class="score-copy">
+              <p id="active-summary">Open-news signal pending.</p>
+              <div class="data-strip">
+                <div class="data-chip"><span>30d mentions</span><strong id="active-volume">--</strong></div>
+                <div class="data-chip"><span>7d change</span><strong id="active-momentum">--</strong></div>
+                <div class="data-chip"><span>Source domains</span><strong id="active-sources">--</strong></div>
+                <div class="data-chip"><span>Window</span><strong id="active-window">30d</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="selector" aria-label="Region selector">
+            <button type="button" data-region="global" aria-pressed="true">Global</button>
+            <button type="button" data-region="ukraine" aria-pressed="false">Ukraine</button>
+            <button type="button" data-region="middle-east" aria-pressed="false">Middle East</button>
+            <button type="button" data-region="taiwan-strait" aria-pressed="false">Taiwan Strait</button>
+            <button type="button" data-region="red-sea" aria-pressed="false">Red Sea</button>
+            <button type="button" data-region="korean-peninsula" aria-pressed="false">Korean Peninsula</button>
+            <button type="button" data-region="south-china-sea" aria-pressed="false">South China Sea</button>
+            <button type="button" data-region="sudan" aria-pressed="false">Sudan</button>
+            <button type="button" data-region="sahel" aria-pressed="false">Sahel</button>
+          </div>
+          <p id="dashboard-status" class="status-note">Preparing source connection...</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <div class="panel-head">
+            <div>
+              <p class="kicker">All tracked regions</p>
+              <h2>Comparative board</h2>
+            </div>
+            <p id="source-state">GDELT DOC 2.0</p>
+          </div>
+          <div id="region-grid" class="region-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <h2>Active source trail</h2>
+          <ul id="source-articles" class="article-list" aria-live="polite">
+            <li><span class="status-note">Waiting for source articles...</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span>Signals are informational and source-bound.</span>
+        <span><a href="/">Home</a> · <a href="/methodology/">Methodology</a> · <a href="/sources/">Sources</a></span>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/app.js?v=20260819" defer></script>
+</body>
+</html>

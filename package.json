@@ -1,0 +1,21 @@
+{
+  "name": "my_warriskindex",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-site.mjs",
+    "serve": "node scripts/serve.mjs",
+    "generate:fallback": "node scripts/generate-fallback-data.mjs",
+    "generate:visual": "npx playwright screenshot --viewport-size=1280,720 scripts/visual-frame.html public/assets/war-risk-signal-board.png",
+    "browser:smoke": "node scripts/browser-smoke.mjs",
+    "verify:production": "node scripts/verify-production.mjs",
+    "search:submit": "node scripts/search-submit.mjs",
+    "cloudflare:configure": "node scripts/configure-cloudflare-launch.mjs",
+    "report": "node scripts/generate-report.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "name": "War Risk Index",
+  "domain": "warriskindex.blog",
+  "url": "https://warriskindex.blog/",
+  "type": "Public data tool",
+  "status": "production_pending",
+  "routes": [
+    "/",
+    "/methodology",
+    "/regions",
+    "/sources",
+    "/privacy",
+    "/terms"
+  ],
+  "product": "Transparent open-news war risk signal for analysts, researchers, and globally exposed teams",
+  "slogan": "A clearer signal when conflict coverage gets loud.",
+  "nonAffiliation": "Independent public information tool. Not affiliated with GDELT, ACLED, UCDP, CFR, Google, any government, insurer, broker, or military organization.",
+  "pricing": {
+    "enabled": false,
+    "reason": "Free public information site. No checkout, paid gate, subscription, or payment collection is used."
+  },
+  "gates": {
+    "trust_data_gate": "pass",
+    "trust_content_gate": "pass",
+    "deployment_region_gate": "pass",
+    "d1_gate": "pass"
+  },
+  "deploymentRegion": "us",
+  "trustDataLedger": [
+    {
+      "source": "https://www.gdeltproject.org/",
+      "claim": "GDELT monitors global print, broadcast, and web news in over 100 languages and updates primary streams every 15 minutes.",
+      "collectedAt": "2026-08-19",
+      "confidence": "high",
+      "displayDecision": "Used as the live open-news signal backbone."
+    },
+    {
+      "source": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+      "claim": "GDELT DOC 2.0 provides JSON timeline and article-list modes for recent coverage analysis.",
+      "collectedAt": "2026-08-19",
+      "confidence": "high",
+      "displayDecision": "Used for the Worker risk endpoint and methodology."
+    },
+    {
+      "source": "https://acleddata.com/general-guide/about-conflict-index",
+      "claim": "ACLED Conflict Index ranks conflict intensity using deadliness, danger to civilians, geographic diffusion, and armed-group fragmentation.",
+      "collectedAt": "2026-08-19",
+      "confidence": "high",
+      "displayDecision": "Used as benchmark methodology context, not copied as live data."
+    },
+    {
+      "source": "https://ucdp.uu.se/apidocs/",
+      "claim": "UCDP exposes RESTful JSON APIs for conflict datasets, including GED, with current version notes and paging.",
+      "collectedAt": "2026-08-19",
+      "confidence": "high",
+      "displayDecision": "Used as official structured conflict-data context."
+    },
+    {
+      "source": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html",
+      "claim": "Wikimedia Analytics API provides page-view endpoints for Wikimedia projects, including per-article daily page views.",
+      "collectedAt": "2026-08-19",
+      "confidence": "high",
+      "displayDecision": "Used only as a public-attention fallback when GDELT is unavailable or rate-limited."
+    },
+    {
+      "source": "https://www.cfr.org/global-conflict-tracker/methodology",
+      "claim": "CFR Global Conflict Tracker documents conflict selection using violence, humanitarian impact, and escalation risk criteria.",
+      "collectedAt": "2026-08-19",
+      "confidence": "high",
+      "displayDecision": "Used to shape plain-language status labels and limitations."
+    }
+  ],
+  "keywordRows": [
+    {
+      "keyword": "war risk index",
+      "type": "seed",
+      "source": "Owner-specified keyword and SERP research",
+      "status": "candidate"
+    },
+    {
+      "keyword": "global war risk index",
+      "type": "related",
+      "source": "SERP synthesis",
+      "status": "candidate"
+    },
+    {
+      "keyword": "war risk assessment",
+      "type": "related",
+      "source": "SERP synthesis",
+      "status": "candidate"
+    },
+    {
+      "keyword": "geopolitical risk index",
+      "type": "related",
+      "source": "Source research",
+      "status": "candidate"
+    },
+    {
+      "keyword": "conflict risk index",
+      "type": "related",
+      "source": "ACLED/CFR benchmark research",
+      "status": "candidate"
+    },
+    {
+      "keyword": "open source conflict monitor",
+      "type": "related",
+      "source": "SERP synthesis",
+      "status": "candidate"
+    },
+    {
+      "keyword": "country war risk",
+      "type": "related",
+      "source": "SERP synthesis",
+      "status": "candidate"
+    },
+    {
+      "keyword": "GDELT conflict risk",
+      "type": "related",
+      "source": "Source research",
+      "status": "candidate"
+    }
+  ],
+  "completionLedger": [
+    {
+      "id": "source_research",
+      "status": "pass",
+      "evidence": "SERP, GDELT, ACLED, UCDP, CFR, and direct competitor pages reviewed."
+    },
+    {
+      "id": "free_public_tool_scope",
+      "status": "pass",
+      "evidence": "Pricing and checkout are intentionally disabled; no payment or paid gate is part of the requested website."
+    }
+  ],
+  "no_early_final_until_all_mandatory_gates_pass": true
+}

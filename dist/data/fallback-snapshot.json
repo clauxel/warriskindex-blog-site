@@ -1,0 +1,1499 @@
+{
+  "generatedAt": "2026-08-19T05:40:15.468Z",
+  "source": "Wikimedia Pageviews build-time fallback",
+  "sourceUrl": "https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html",
+  "window": {
+    "start": "2026071900",
+    "end": "2026081700"
+  },
+  "note": "Used only when live GDELT and live Wikimedia requests are unavailable. It is a public-attention snapshot, not conflict event intensity.",
+  "snapshots": {
+    "ukraine": {
+      "slug": "ukraine",
+      "label": "Ukraine",
+      "query": "Wikimedia pageviews: Russo-Ukrainian_War",
+      "focus": "Russia-Ukraine war coverage and ceasefire or escalation signals.",
+      "score": 73,
+      "level": "High",
+      "totalArticles": 31831,
+      "momentumPct": 7.837763770896136,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "steady",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Ukraine is in high band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 100,
+        "acceleration": 58,
+        "breadth": 14,
+        "recency": 69
+      },
+      "timeline": [
+        {
+          "date": "2026-07-19",
+          "value": 976,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 999,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 1029,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 1081,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 1093,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 1040,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 954,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 1009,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 1130,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 1097,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 1012,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 1162,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 1037,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 951,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 1029,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 1064,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 1049,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 1018,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 1067,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 1001,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 1020,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 1069,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 1074,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-11",
+          "value": 972,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 990,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 1047,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 978,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-15",
+          "value": 1028,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 1102,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 1753,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "Russo-Ukrainian War",
+          "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_War",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "middle-east": {
+      "slug": "middle-east",
+      "label": "Middle East",
+      "query": "Wikimedia pageviews: Middle_East_crisis_(2023-present)",
+      "focus": "Regional conflict, missile, maritime, and escalation language.",
+      "score": 34,
+      "level": "Watch",
+      "totalArticles": 7,
+      "momentumPct": -33.33333333333333,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "cooling",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Middle East is in watch band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 35,
+        "acceleration": 17,
+        "breadth": 14,
+        "recency": 100
+      },
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 1,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "Middle East crisis (2023-present)",
+          "url": "https://en.wikipedia.org/wiki/Middle_East_crisis_(2023-present)",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "taiwan-strait": {
+      "slug": "taiwan-strait",
+      "label": "Taiwan Strait",
+      "query": "Wikimedia pageviews: Taiwan_Strait",
+      "focus": "Military drills, blockade language, and cross-strait escalation.",
+      "score": 72,
+      "level": "High",
+      "totalArticles": 3708,
+      "momentumPct": 10.367892976588628,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "steady",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Taiwan Strait is in high band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 100,
+        "acceleration": 60,
+        "breadth": 14,
+        "recency": 52
+      },
+      "timeline": [
+        {
+          "date": "2026-07-19",
+          "value": 106,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 94,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 127,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 140,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 136,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 119,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 94,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 105,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 126,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 87,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 115,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 118,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 114,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 90,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 95,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 155,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 110,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 112,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 131,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 128,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 129,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 132,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 155,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-11",
+          "value": 145,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 129,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 138,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 148,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-15",
+          "value": 144,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 134,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 152,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "Taiwan Strait",
+          "url": "https://en.wikipedia.org/wiki/Taiwan_Strait",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "red-sea": {
+      "slug": "red-sea",
+      "label": "Red Sea shipping",
+      "query": "Wikimedia pageviews: Red_Sea_crisis",
+      "focus": "Maritime attacks, rerouting, and trade disruption coverage.",
+      "score": 63,
+      "level": "High",
+      "totalArticles": 36137,
+      "momentumPct": -15.095970949334255,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "cooling",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Red Sea shipping is in high band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 100,
+        "acceleration": 35,
+        "breadth": 14,
+        "recency": 23
+      },
+      "timeline": [
+        {
+          "date": "2026-07-19",
+          "value": 610,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 1735,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 2565,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2049,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 3443,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 2304,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 1885,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 1430,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 1571,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 1023,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 1116,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 1185,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 1462,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 933,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 942,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 1191,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 891,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 1004,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 834,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 820,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 708,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 770,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 756,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-11",
+          "value": 896,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 842,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 626,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 659,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-15",
+          "value": 562,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 664,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 661,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "Red Sea crisis",
+          "url": "https://en.wikipedia.org/wiki/Red_Sea_crisis",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "korean-peninsula": {
+      "slug": "korean-peninsula",
+      "label": "Korean Peninsula",
+      "query": "Wikimedia pageviews: Korean_conflict",
+      "focus": "Missile tests, border incidents, and crisis signaling.",
+      "score": 82,
+      "level": "Critical",
+      "totalArticles": 10473,
+      "momentumPct": 45.92901878914405,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "rising",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Korean Peninsula is in critical band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 100,
+        "acceleration": 96,
+        "breadth": 14,
+        "recency": 64
+      },
+      "timeline": [
+        {
+          "date": "2026-07-19",
+          "value": 361,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 371,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 369,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 334,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 355,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 311,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 355,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 468,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 729,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 356,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 360,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 296,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 276,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 275,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 259,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 286,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 263,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 273,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 289,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 261,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 266,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 269,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 295,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-11",
+          "value": 323,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 248,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 235,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 246,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-15",
+          "value": 621,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 595,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 528,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "Korean conflict",
+          "url": "https://en.wikipedia.org/wiki/Korean_conflict",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "south-china-sea": {
+      "slug": "south-china-sea",
+      "label": "South China Sea",
+      "query": "Wikimedia pageviews: South_China_Sea_disputes",
+      "focus": "Maritime standoffs, coast guard encounters, and military posture.",
+      "score": 48,
+      "level": "Warning",
+      "totalArticles": 74,
+      "momentumPct": -33.33333333333333,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "cooling",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "South China Sea is in warning band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 73,
+        "acceleration": 17,
+        "breadth": 14,
+        "recency": 51
+      },
+      "timeline": [
+        {
+          "date": "2026-07-19",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 3,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 4,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 3,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 2,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 3,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 2,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 0,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 3,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 11,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 8,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 2,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 3,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 6,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 4,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-11",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 2,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 2,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-15",
+          "value": 2,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 1,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 3,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "South China Sea disputes",
+          "url": "https://en.wikipedia.org/wiki/South_China_Sea_disputes",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "sudan": {
+      "slug": "sudan",
+      "label": "Sudan",
+      "query": "Wikimedia pageviews: Sudanese_civil_war_(2023-present)",
+      "focus": "Civil war coverage, displacement, and battlefield trend language.",
+      "score": 62,
+      "level": "High",
+      "totalArticles": 500,
+      "momentumPct": -28.187919463087248,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "cooling",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Sudan is in high band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 100,
+        "acceleration": 22,
+        "breadth": 14,
+        "recency": 43
+      },
+      "timeline": [
+        {
+          "date": "2026-07-19",
+          "value": 16,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 9,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 10,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 9,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 10,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 18,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 14,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 15,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 14,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 20,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 30,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 20,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 13,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 12,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 25,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 9,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 13,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 13,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 12,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 30,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 29,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 25,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 27,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-11",
+          "value": 19,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 14,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 20,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 7,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-15",
+          "value": 10,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 20,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 17,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "Sudanese civil war (2023-present)",
+          "url": "https://en.wikipedia.org/wiki/Sudanese_civil_war_(2023-present)",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "sahel": {
+      "slug": "sahel",
+      "label": "Sahel",
+      "query": "Wikimedia pageviews: Mali_War",
+      "focus": "Insurgent violence and instability in Mali, Burkina Faso, and Niger.",
+      "score": 67,
+      "level": "High",
+      "totalArticles": 29102,
+      "momentumPct": -5.893909626719057,
+      "sourceCount": 1,
+      "window": "30d",
+      "direction": "steady",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Sahel is in high band using a dated public-attention fallback snapshot.",
+      "lenses": {
+        "intensity": 100,
+        "acceleration": 44,
+        "breadth": 14,
+        "recency": 36
+      },
+      "timeline": [
+        {
+          "date": "2026-07-19",
+          "value": 1344,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 1341,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 1020,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 1284,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 1685,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 1083,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 862,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 953,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 1278,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 1306,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 944,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 849,
+          "norm": 0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 998,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 984,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 1214,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-03",
+          "value": 1089,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-04",
+          "value": 860,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-05",
+          "value": 740,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-06",
+          "value": 761,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-07",
+          "value": 752,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-08",
+          "value": 742,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 765,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-10",
+          "value": 979,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-11",
+          "value": 808,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-12",
+          "value": 715,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-13",
+          "value": 710,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-14",
+          "value": 685,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-15",
+          "value": 746,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 770,
+          "norm": 0
+        },
+        {
+          "date": "2026-08-17",
+          "value": 835,
+          "norm": 0
+        }
+      ],
+      "articles": [
+        {
+          "title": "Mali War",
+          "url": "https://en.wikipedia.org/wiki/Mali_War",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    },
+    "global": {
+      "slug": "global",
+      "label": "Global composite",
+      "query": "Wikimedia pageviews regional composite",
+      "focus": "Broad global war-risk language across the open news graph.",
+      "score": 63,
+      "level": "High",
+      "totalArticles": 111832,
+      "momentumPct": -6.4637238961473,
+      "sourceCount": 8,
+      "window": "30d",
+      "direction": "composite",
+      "source": "Wikimedia Pageviews build-time fallback",
+      "fallback": true,
+      "buildTimeSnapshot": true,
+      "summary": "Global composite is in high band using dated public-attention fallback snapshots across 8 tracked regions.",
+      "lenses": {
+        "intensity": 89,
+        "acceleration": 44,
+        "breadth": 96,
+        "recency": 55
+      },
+      "timeline": [],
+      "articles": [
+        {
+          "title": "Korean conflict",
+          "url": "https://en.wikipedia.org/wiki/Korean_conflict",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        },
+        {
+          "title": "Russo-Ukrainian War",
+          "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_War",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        },
+        {
+          "title": "Taiwan Strait",
+          "url": "https://en.wikipedia.org/wiki/Taiwan_Strait",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        },
+        {
+          "title": "Mali War",
+          "url": "https://en.wikipedia.org/wiki/Mali_War",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        },
+        {
+          "title": "Red Sea crisis",
+          "url": "https://en.wikipedia.org/wiki/Red_Sea_crisis",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        },
+        {
+          "title": "Sudanese civil war (2023-present)",
+          "url": "https://en.wikipedia.org/wiki/Sudanese_civil_war_(2023-present)",
+          "domain": "en.wikipedia.org",
+          "seenDate": "2026-08-17"
+        }
+      ]
+    }
+  },
+  "errors": [
+    {
+      "region": "ukraine",
+      "title": "2022_Russian_invasion_of_Ukraine"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>War Risk Index Sources</title>
+  <meta name="description" content="Official sources and competitor context used to build the War Risk Index open-news signal and methodology.">
+  <link rel="canonical" href="https://warriskindex.blog/sources/">
+  <meta property="og:title" content="War Risk Index Sources">
+  <meta property="og:description" content="Source ledger for War Risk Index, including GDELT, ACLED, UCDP, CFR, and competitor context.">
+  <meta property="og:url" content="https://warriskindex.blog/sources/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://warriskindex.blog/assets/war-risk-signal-board.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260819">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span><span>War Risk Index</span></a>
+        <nav class="navlinks" aria-label="Primary">
+          <a href="/methodology/">Methodology</a>
+          <a href="/regions/">Regions</a>
+          <a href="/sources/">Sources</a>
+          <a href="/llms.txt">llms.txt</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="main">
+      <section class="wrap legal-panel">
+        <p class="kicker">Source ledger</p>
+        <h1>War Risk Index sources</h1>
+        <p class="lead">The site separates live data, benchmark methodology, and competitor context so readers can see what the score does and does not claim.</p>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <div class="source-grid">
+            <article class="source-card">
+              <h2>Live signal</h2>
+              <p><a href="https://www.gdeltproject.org/" target="_blank" rel="noopener">GDELT Project</a></p>
+              <p>Used as the live open-news backbone because it monitors global print, broadcast, and web news and updates primary streams every 15 minutes.</p>
+            </article>
+            <article class="source-card">
+              <h2>API mode</h2>
+              <p><a href="https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/" target="_blank" rel="noopener">GDELT DOC 2.0 API</a></p>
+              <p>Used for timeline and article-list responses. The site reads JSON output and stores derived snapshots in Cloudflare D1.</p>
+            </article>
+            <article class="source-card">
+              <h2>Conflict benchmark</h2>
+              <p><a href="https://acleddata.com/general-guide/about-conflict-index" target="_blank" rel="noopener">ACLED Conflict Index</a></p>
+              <p>Used as methodology context for conflict intensity lenses such as deadliness, civilian danger, diffusion, and armed-group fragmentation.</p>
+            </article>
+            <article class="source-card">
+              <h2>Dataset benchmark</h2>
+              <p><a href="https://ucdp.uu.se/apidocs/" target="_blank" rel="noopener">UCDP API documentation</a></p>
+              <p>Used to frame structured conflict data availability and the difference between event datasets and a live news-pressure signal.</p>
+            </article>
+            <article class="source-card">
+              <h2>Fallback signal</h2>
+              <p><a href="https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html" target="_blank" rel="noopener">Wikimedia Analytics API</a></p>
+              <p>Used only when GDELT is unavailable or rate-limited. It represents public attention to conflict pages, not event intensity.</p>
+            </article>
+            <article class="source-card">
+              <h2>Tracker language</h2>
+              <p><a href="https://www.cfr.org/global-conflict-tracker/methodology" target="_blank" rel="noopener">CFR Global Conflict Tracker methodology</a></p>
+              <p>Used for conflict-status language around violence, humanitarian impact, and escalation risk.</p>
+            </article>
+            <article class="source-card">
+              <h2>Competitive context</h2>
+              <p><a href="https://warriskindex.org/" target="_blank" rel="noopener">warriskindex.org</a></p>
+              <p>Reviewed as an exact-match competitor. War Risk Index Blog differentiates by publishing the data formula and live source boundary.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <h2>Non-affiliation</h2>
+          <p>War Risk Index is independent. It is not affiliated with GDELT, ACLED, UCDP, CFR, Google, any government, insurer, broker, military organization, or the operators of similarly named sites.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span>Source ledger last reviewed on August 19, 2026.</span>
+        <span><a href="/">Home</a> · <a href="/methodology/">Methodology</a> · <a href="/privacy/">Privacy</a></span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

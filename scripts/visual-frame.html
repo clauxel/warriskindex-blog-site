@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>War Risk Index visual frame</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;width:1280px;height:720px;background:#172033;color:#fffef9;font-family:Inter,Arial,sans-serif;letter-spacing:0;overflow:hidden}
+    .frame{width:1280px;height:720px;padding:54px;display:grid;grid-template-columns:1fr 420px;gap:34px;background:linear-gradient(120deg,#172033,#1d3f45 48%,#5a332e)}
+    .map{position:relative;border:1px solid rgba(255,254,249,.35);border-radius:8px;overflow:hidden;background:linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(180deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:42px 42px}
+    .map::before{content:"";position:absolute;inset:70px 80px;background:polygon(0 0);border:2px solid transparent}
+    .route{position:absolute;height:3px;background:#d8a13d;transform-origin:left center;opacity:.85}.r1{left:80px;top:355px;width:650px;transform:rotate(-17deg)}.r2{left:170px;top:205px;width:510px;transform:rotate(13deg)}.r3{left:320px;top:500px;width:380px;transform:rotate(-33deg)}
+    .node{position:absolute;width:22px;height:22px;border-radius:50%;background:#fffef9;border:6px solid #b94733;box-shadow:0 0 0 12px rgba(185,71,51,.18)}.n1{left:180px;top:172px}.n2{left:560px;top:302px}.n3{left:720px;top:430px}.n4{left:410px;top:520px;border-color:#d8a13d}
+    .band{position:absolute;left:48px;right:48px;height:52px;border:1px solid rgba(255,254,249,.2);border-radius:8px;background:rgba(255,254,249,.08);display:flex;align-items:center;padding:0 18px;gap:14px}.b1{top:48px}.b2{bottom:48px}
+    .tick{height:20px;width:18px;background:#126e75}.tick:nth-child(3n){height:35px;background:#d8a13d}.tick:nth-child(5n){height:44px;background:#b94733}
+    .side{display:grid;gap:16px}.title{font-family:Georgia,serif;font-size:66px;line-height:.92;margin:0}.copy{color:#dbe6df;font-size:21px;line-height:1.35}.score{border:1px solid rgba(255,254,249,.35);border-radius:8px;padding:22px;background:rgba(255,254,249,.1)}.score span{display:block;font-size:18px;color:#dbe6df}.score strong{display:block;font-family:Georgia,serif;font-size:112px;line-height:.85;color:#fffef9}.lens{display:grid;grid-template-columns:1fr auto;gap:10px;font-size:18px}.dot{width:12px;height:12px;border-radius:50%;background:#126e75;display:inline-block;margin-right:8px}.dot.amber{background:#d8a13d}.dot.rust{background:#b94733}.mono{font-family:ui-monospace,Menlo,monospace;color:#dbe6df}
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="map" aria-label="Risk signal board">
+      <div class="band b1"><span class="mono">EUROPE</span><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i></div>
+      <div class="route r1"></div><div class="route r2"></div><div class="route r3"></div>
+      <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div><div class="node n4"></div>
+      <div class="band b2"><span class="mono">MARITIME</span><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i><i class="tick"></i></div>
+    </div>
+    <div class="side">
+      <div>
+        <p class="mono">OPEN NEWS SIGNAL</p>
+        <h1 class="title">War Risk Index</h1>
+        <p class="copy">Volume, acceleration, breadth, and recency compressed into one source-bound monitoring signal.</p>
+      </div>
+      <div class="score"><span>Composite example</span><strong>64</strong><span>High coverage pressure</span></div>
+      <div class="lens"><span><i class="dot"></i>Coverage intensity</span><span>50%</span><span><i class="dot amber"></i>Acceleration</span><span>25%</span><span><i class="dot rust"></i>Source breadth</span><span>15%</span><span><i class="dot"></i>Recency</span><span>10%</span></div>
+    </div>
+  </div>
+</body>
+</html>

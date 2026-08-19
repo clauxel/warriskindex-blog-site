@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>War Risk Index Methodology</title>
+  <meta name="description" content="Methodology for the War Risk Index open-news signal, including sources, formula, score bands, and limitations.">
+  <link rel="canonical" href="https://warriskindex.blog/methodology/">
+  <meta property="og:title" content="War Risk Index Methodology">
+  <meta property="og:description" content="The formula and evidence rules behind the War Risk Index open-news signal.">
+  <meta property="og:url" content="https://warriskindex.blog/methodology/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://warriskindex.blog/assets/war-risk-signal-board.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260819">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"War Risk Index Methodology","url":"https://warriskindex.blog/methodology/","about":"Open-news conflict risk signal methodology","author":{"@type":"Organization","name":"War Risk Index"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span><span>War Risk Index</span></a>
+        <nav class="navlinks" aria-label="Primary">
+          <a href="/methodology/">Methodology</a>
+          <a href="/regions/">Regions</a>
+          <a href="/sources/">Sources</a>
+          <a href="/llms.txt">llms.txt</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="main">
+      <section class="wrap legal-panel">
+        <p class="kicker">Methodology</p>
+        <h1>War Risk Index methodology</h1>
+        <p class="lead">The index reads recent open-news coverage and converts it into a transparent pressure signal. The score is designed for monitoring attention, acceleration, and breadth. It is not a forecast probability and it is not advice.</p>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <div class="method-grid">
+            <article>
+              <h2>Signal lenses</h2>
+              <p>Each tracked region is queried against conflict language in the GDELT DOC 2.0 API. The Worker reads a 30-day timeline and a recent article list, then computes four lenses.</p>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Lens</th><th>Weight</th><th>Meaning</th></tr></thead>
+                  <tbody>
+                    <tr><td>Coverage intensity</td><td>50%</td><td>How much conflict-related coverage appears in the rolling window.</td></tr>
+                    <tr><td>Acceleration</td><td>25%</td><td>Whether the last seven days are rising against the prior seven days.</td></tr>
+                    <tr><td>Source breadth</td><td>15%</td><td>How many distinct news domains appear in the article sample.</td></tr>
+                    <tr><td>Recency</td><td>10%</td><td>Whether the most recent day is above the window average.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            <article>
+              <h2>Formula</h2>
+              <div class="formula">score = clamp(0, 100,
+  intensity_lens * 0.50
++ acceleration_lens * 0.25
++ source_breadth_lens * 0.15
++ recency_lens * 0.10
+)</div>
+              <p>Intensity uses a log scale so one large coverage burst does not dominate the whole score. Acceleration is capped to keep a single noisy week from becoming a false crisis marker.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <div class="method-grid">
+            <article>
+              <p class="kicker">Benchmark context</p>
+              <h2>Why these lenses</h2>
+              <p>ACLED's Conflict Index emphasizes deadliness, danger to civilians, geographic diffusion, and armed-group fragmentation. CFR's tracker emphasizes violence, humanitarian impact, and escalation risk. War Risk Index cannot reproduce those curated datasets in real time, so it uses open-news volume, acceleration, and breadth as a separate early signal.</p>
+            </article>
+            <article>
+              <p class="kicker">Limitations</p>
+              <h2>What the index is not</h2>
+              <p>The score can rise because of media attention, major diplomacy, repeated articles about the same event, or language shifts. It can miss local violence in low-coverage environments. It should be read beside primary reports and qualified analysis.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <h2>Score bands</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Score</th><th>Band</th><th>Interpretation</th></tr></thead>
+              <tbody>
+                <tr><td>0-20</td><td>Calm</td><td>Low open-news pressure for the tracked query.</td></tr>
+                <tr><td>21-40</td><td>Watch</td><td>Conflict language is present but not broadly accelerating.</td></tr>
+                <tr><td>41-60</td><td>Warning</td><td>Intensity, recency, or source breadth is elevated.</td></tr>
+                <tr><td>61-80</td><td>High</td><td>Several lenses are elevated at the same time.</td></tr>
+                <tr><td>81-100</td><td>Critical</td><td>The signal is unusually concentrated, broad, and fast-moving.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span>Methodology last reviewed on August 19, 2026.</span>
+        <span><a href="/sources/">Sources</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

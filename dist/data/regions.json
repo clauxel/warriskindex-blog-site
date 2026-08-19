@@ -1,0 +1,59 @@
+{
+  "updatedAt": "2026-08-19",
+  "regions": [
+    {
+      "slug": "global",
+      "label": "Global composite",
+      "query": "war risk",
+      "focus": "Broad global war-risk language across the open news graph."
+    },
+    {
+      "slug": "ukraine",
+      "label": "Ukraine",
+      "query": "Ukraine",
+      "focus": "Russia-Ukraine war coverage and ceasefire or escalation signals."
+    },
+    {
+      "slug": "middle-east",
+      "label": "Middle East",
+      "query": "Middle East",
+      "focus": "Regional conflict, missile, maritime, and escalation language."
+    },
+    {
+      "slug": "taiwan-strait",
+      "label": "Taiwan Strait",
+      "query": "Taiwan Strait",
+      "focus": "Military drills, blockade language, and cross-strait escalation."
+    },
+    {
+      "slug": "red-sea",
+      "label": "Red Sea shipping",
+      "query": "Red Sea",
+      "focus": "Maritime attacks, rerouting, and trade disruption coverage."
+    },
+    {
+      "slug": "korean-peninsula",
+      "label": "Korean Peninsula",
+      "query": "North Korea",
+      "focus": "Missile tests, border incidents, and crisis signaling."
+    },
+    {
+      "slug": "south-china-sea",
+      "label": "South China Sea",
+      "query": "South China Sea",
+      "focus": "Maritime standoffs, coast guard encounters, and military posture."
+    },
+    {
+      "slug": "sudan",
+      "label": "Sudan",
+      "query": "Sudan",
+      "focus": "Civil war coverage, displacement, and battlefield trend language."
+    },
+    {
+      "slug": "sahel",
+      "label": "Sahel",
+      "query": "Sahel",
+      "focus": "Insurgent violence and instability in Mali, Burkina Faso, and Niger."
+    }
+  ]
+}

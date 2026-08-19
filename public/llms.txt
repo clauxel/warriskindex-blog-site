@@ -1,0 +1,26 @@
+# War Risk Index
+
+War Risk Index is an independent public information site at
+https://warriskindex.blog/ for the keyword "war risk index".
+
+The site provides a transparent 0-100 open-news risk pressure signal from recent
+GDELT coverage. It compares global and regional conflict-related coverage using
+volume, acceleration, source breadth, and recency. It does not claim to predict
+war probability, provide investment advice, sell insurance, issue government
+analysis, or replace qualified security judgment.
+
+Primary pages:
+
+- https://warriskindex.blog/
+- https://warriskindex.blog/methodology/
+- https://warriskindex.blog/regions/
+- https://warriskindex.blog/sources/
+
+Core sources:
+
+- GDELT Project: https://www.gdeltproject.org/
+- GDELT DOC 2.0 API: https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/
+- ACLED Conflict Index methodology: https://acleddata.com/general-guide/about-conflict-index
+- UCDP API documentation: https://ucdp.uu.se/apidocs/
+- CFR Global Conflict Tracker methodology: https://www.cfr.org/global-conflict-tracker/methodology
+- Wikimedia Analytics API page views: https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html

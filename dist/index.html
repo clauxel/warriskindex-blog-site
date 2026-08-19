@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>War Risk Index - Live Open-News Conflict Risk Signal</title>
+  <meta name="description" content="War Risk Index turns recent open-news conflict coverage into a transparent 0-100 signal for global risk monitoring.">
+  <link rel="canonical" href="https://warriskindex.blog/">
+  <meta property="og:title" content="War Risk Index">
+  <meta property="og:description" content="A transparent open-news signal for tracking war risk pressure across global flashpoints.">
+  <meta property="og:url" content="https://warriskindex.blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://warriskindex.blog/assets/war-risk-signal-board.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260819">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"War Risk Index","url":"https://warriskindex.blog/","applicationCategory":"DataVisualizationApplication","operatingSystem":"Any","description":"Transparent open-news conflict risk signal built from recent GDELT coverage patterns.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="War Risk Index home"><span class="brand-mark" aria-hidden="true"></span><span>War Risk Index</span></a>
+        <nav class="navlinks" aria-label="Primary">
+          <a href="/methodology/">Methodology</a>
+          <a href="/regions/">Regions</a>
+          <a href="/sources/">Sources</a>
+          <a href="/llms.txt">llms.txt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="wrap workbench">
+        <section class="intro-panel" aria-labelledby="home-title">
+          <div>
+            <p class="kicker">Open-news conflict signal</p>
+            <h1 id="home-title">War Risk Index</h1>
+            <p class="lead">A transparent 0-100 pressure signal for moments when conflict coverage, military language, and regional escalation narratives start moving together.</p>
+          </div>
+          <div class="microgrid" aria-label="Signal boundaries">
+            <div class="micro"><strong>30d</strong><span>rolling coverage window</span></div>
+            <div class="micro"><strong>0-100</strong><span>signal strength, not probability</span></div>
+            <div class="micro"><strong>15m</strong><span>source stream update cadence</span></div>
+          </div>
+          <div class="button-row">
+            <a class="button primary" href="/regions/">Open region board</a>
+            <a class="button" href="/methodology/">Read methodology</a>
+          </div>
+        </section>
+
+        <section class="signal-panel" aria-labelledby="signal-title">
+          <div class="signal-header">
+            <div>
+              <span class="label">Current board</span>
+              <h2 id="signal-title"><span id="active-region">Global composite</span></h2>
+            </div>
+            <div class="stamp">
+              <div id="api-state">Live source pending</div>
+              <div id="updated-at">Waiting for data</div>
+            </div>
+          </div>
+
+          <div class="score-row">
+            <div class="score-box">
+              <div class="score"><span id="active-score">--</span><small>/100</small></div>
+              <div id="active-level" class="level">Pending</div>
+            </div>
+            <div class="score-copy">
+              <p id="active-summary">The board refreshes from open-news coverage and shows when the signal is available, cached, or blocked by the upstream source.</p>
+              <div class="data-strip" aria-label="Signal details">
+                <div class="data-chip"><span>30d mentions</span><strong id="active-volume">--</strong></div>
+                <div class="data-chip"><span>7d change</span><strong id="active-momentum">--</strong></div>
+                <div class="data-chip"><span>Source domains</span><strong id="active-sources">--</strong></div>
+                <div class="data-chip"><span>Window</span><strong id="active-window">30d</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="selector" aria-label="Region selector">
+            <button type="button" data-region="global" aria-pressed="true">Global</button>
+            <button type="button" data-region="ukraine" aria-pressed="false">Ukraine</button>
+            <button type="button" data-region="middle-east" aria-pressed="false">Middle East</button>
+            <button type="button" data-region="taiwan-strait" aria-pressed="false">Taiwan Strait</button>
+            <button type="button" data-region="red-sea" aria-pressed="false">Red Sea</button>
+            <button type="button" data-region="south-china-sea" aria-pressed="false">South China Sea</button>
+          </div>
+
+          <figure class="signal-visual">
+            <img src="/assets/war-risk-signal-board.png" alt="Abstract risk signal board with regional strips and score bands" width="1280" height="720">
+          </figure>
+
+          <div class="query-panel">
+            <form id="custom-signal-form">
+              <label class="hidden" for="custom-query">Custom signal query</label>
+              <input id="custom-query" name="query" type="search" value="war risk index" maxlength="80" autocomplete="off">
+              <button class="button" type="submit">Run signal</button>
+            </form>
+            <p id="dashboard-status" class="status-note">Preparing source connection...</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <div class="panel-head">
+            <div>
+              <p class="kicker">Regional signal board</p>
+              <h2>Where coverage is moving</h2>
+            </div>
+            <p id="source-state">GDELT DOC 2.0</p>
+          </div>
+          <div id="region-grid" class="region-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <div class="panel-head">
+            <div>
+              <p class="kicker">Recent source trail</p>
+              <h2>Articles behind the active signal</h2>
+            </div>
+            <p>Headlines come from the same open-news query used to compute the active score. Availability depends on the upstream response.</p>
+          </div>
+          <ul id="source-articles" class="article-list" aria-live="polite">
+            <li><span class="status-note">Waiting for source articles...</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap section-panel">
+          <div class="method-grid">
+            <article>
+              <p class="kicker">Score bands</p>
+              <h2>Signal, not certainty</h2>
+              <p>The index is a coverage-pressure reading. A high score means conflict-related language is more intense, broader, faster, or more recent in the open-news graph. It is not a probability that war will start.</p>
+            </article>
+            <article>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Band</th><th>Label</th><th>Plain meaning</th></tr></thead>
+                  <tbody>
+                    <tr><td>0-20</td><td>Calm</td><td>Little current war-risk pressure in the tracked query.</td></tr>
+                    <tr><td>21-40</td><td>Watch</td><td>Noticeable tension language without broad acceleration.</td></tr>
+                    <tr><td>41-60</td><td>Warning</td><td>Several signal lenses are active at the same time.</td></tr>
+                    <tr><td>61-80</td><td>High</td><td>Coverage intensity and breadth are both elevated.</td></tr>
+                    <tr><td>81-100</td><td>Critical</td><td>The open-news signal is unusually concentrated and fast-moving.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span>War Risk Index is independent public information.</span>
+        <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/sources/">Sources</a></span>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/app.js?v=20260819" defer></script>
+</body>
+</html>
